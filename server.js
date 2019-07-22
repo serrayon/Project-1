@@ -1,5 +1,6 @@
 //SECTION  Modules
 const express = require('express');
+const db = require('./models')
 
 //SECTION  Instanced Modules
 const app = express();
