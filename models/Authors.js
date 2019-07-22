@@ -1,9 +1,9 @@
 const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
-const AuthorData = ({
+const AuthorSchema = ({
         name: { type: String, required: true },
-        dob: { Date, required: true },
+        dob: { type: Date },
         gender: { type: String },
         location: { type: String },
         genre: { type: String },
