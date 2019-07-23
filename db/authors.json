@@ -1,0 +1,128 @@
+const authorData = [
+    {
+        name: 'Sor Juana Inés de la Cruz',
+        dob: new Date(1651, 10, 12), //FIXME 
+        dod: new Date(),
+        location: 'Mexico City, Mexico',
+        genre: 'Poet, Scholar',
+        top_books: 'Primer sueño',
+        notable_quote: { type: String }, //FIXME 
+        authorIndex: 1,
+        img: 'https://i.pinimg.com/originals/5d/45/47/5d4547af31575dd299ce149ef039d89e.jpg' 
+    },{
+        name: 'Sylvia Plath',
+        dob: new Date(1932, 10, 27), //FIXME 
+        dod: new Date(),
+        location: 'Boston, Massachusetts, United States',
+        genre: 'Poet, Novelist',
+        top_books: ['The Colossous and Other Poems, Ariel'],
+        notable_quote: 'I shut my eyes and all the world drops dead; I lift my eyes and all is born again',
+        authorIndex: 2,
+        img: { type: String, } //FIXME 
+    },{
+        name: 'Emily Brontë',
+        dob: new Date(1818, 7, 30), //FIXME 
+        dod: new Date(1848, 12, 19),
+        location: 'England',
+        genre: 'Poet, Novelist, Governess',
+        top_books: 'Withering Heights',
+        notable_quote: `He's more myself than I am. Whatever our souls are made of, his and mine are the same.`,
+        authorIndex: 3,
+        img: { type: String, } //FIXME 
+    },{
+        name: 'Lucette Lagnado',
+        dob: new Date(1956, 9, 19),  //FIXME 
+        dod: new Date(2019, 7, 10 ),
+        location: 'Cairo, Egypt',
+        genre: 'Journalist',
+        top_books: ['The Man In The White SHarkskin Suite, The Arrogant Years'],
+        notable_quote: 'In Egypt, it was easy to be religous and wordly at the same time, but that seemed an impossibility here in America. It was as if you arrived and were ordered to choose one door or the other, not both.',
+        authorIndex: 4,
+        img: { type: String, } //FIXME 
+
+    },{
+        name: 'Isabel Allende',
+        dob: new Date(1942, 08, 2), //FIXME 
+        dod: new Date(),
+        location: 'Chile',
+        genre: { type: String },
+        top_books: ['The House of the Spirits, City of the Beast, Of Loves and Shadows, Eva Luna, Two Words, The Japanese Lover'],
+        notable_quote: { type: String },
+        authorIndex: 5,
+        img: { type: String, } //FIXME 
+    },{
+        name: 'Tolstoy',
+        dob: { Date, required: true },
+        dod: new Date(),
+        location: { type: String },
+        genre: { type: String },
+        top_books: { type: [String] },
+        notable_quote: { type: String },
+        authorIndex: 6,
+        img: { type: String, }   //FIXME 
+    },{
+        name: 'Haruki Murikabe',
+        dob: new Date(1949, 1, 12),
+        dod: new Date(),
+        location: 'Kyoto, Japan',
+        genre: { type: String },
+        top_books: ['The Wind-Up Bird Chronicle, Kafka on the Shore, IQ84'],
+        notable_quote: `Anyone who falls in love is searching for the missing pieces of themeselves. So anyone who's in love gets sad when they think of their lover. It's like stepping back inside a room you have fond memories of, one you haven't seen in a long time.`,
+        authorIndex: 7,
+        img: { type: String, } //FIXME 
+    },{
+        name: 'Julio Cortázar',
+        dob: new Date(1914,8, 26 ),
+        dod: new Date(1984, 2, 12 ),
+        location: 'Argentina',
+        genre: { type: String }, //FIXME 
+        top_books: [`Bestario, End of the Game, All Fires the Fire,`],
+        notable_quote: { type: String }, //FIXME 
+        authorIndex: 8,
+        img: { type: String, } //FIXME 
+    },{
+        name: 'Sun Tzu',
+        dob: { Date, required: true },
+        dod: new Date(),
+        location: { type: String },
+        genre: { type: String },
+        top_books: { type: [String] },
+        notable_quote: { type: String },
+        authorIndex: 9,
+        img: { type: String, }
+    },{
+
+    },{
+        name: 'Arundhati Roy',
+        dob: { Date, required: true },
+        dod: new Date(),
+        location: { type: String },
+        genre: { type: String },
+        top_books: { type: [String] },
+        notable_quote: { type: String },
+        authorIndex: 10,
+        img: { type: String, }
+    },{
+        name: 'Miguel de Cervantez',
+        dob: new Date(1547, 9, 29 ),
+        dod: new Date(1616, 4, 22 ),
+        location: 'Alcala de Henares, Spain',
+        genre: { type: String },
+        top_books: { type: [String] },
+        notable_quote: { type: String },
+        authorIndex: 11,
+        img: { type: String, }
+    },{
+        name: '',
+        dob: { Date, required: true },
+        dod: new Date(),
+        location: { type: String },
+        genre: { type: String },
+        top_books: { type: [String] },
+        notable_quote: { type: String },
+        img: { type: String, }
+    }
+]
+
+module.exports = authorData
+    
