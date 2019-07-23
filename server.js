@@ -4,6 +4,7 @@ const db = require('./models')
 const bodyParser = require('body-parser');
 //SECTION  Instanced Modules
 const app = express();
+const routes = require('./routes');
 
 //SECTION System configuration variables
 const PORT = process.env.PORT || 4000;
@@ -30,23 +31,42 @@ app.get('/', (req, res) =>{
 
 // -------------------------------- API ENDPOINTS -------------------------------- //
 
-// Author Index
-app.get('/api/v1/authors', (req, res) => {
-    db.Author.find({}, (err, allAuthors) => {
+
+
+  //Comment create
+  app.post('/api/v1/comments', (req ,res) => {
+    const newComment = req.body;
+  
+    db.Comment.create(newComment, (err, createdComment) => {
       if (err) return res.status(400).json({
         status: 400,
-        message: 'Something went wrong, please try again',
-      });
+        message: 'Something went wrong, please try again'});
   
-      res.status(200).json({
-        status: 200,
-        numberOfResults: allAuthors.length,
-        data: allAuthors,
+      res.status(201).json({
+        status: 201,
+        data: createdComment,
         requestedAt: getTime(),
       });
     });
   });
 
+  // Comment Destroy
+app.delete('/api/v1/comments/:comment_id', (req, res) => {
+    db.Comment.findByIdAndDelete(req.params.book_id, (err, deletedComment) => {
+      if (err) return res.status(400).json({
+        status: 400,
+        message: 'Something went wrong, please try again',
+      });
+  
+      console.log(deletedComment);
+      res.status(200).json({
+        status: 200,
+        message: 'Success',
+      });
+    });
+  });
+
+  app.use('/api/v1/books', routes.books)
 
 
 //SECTION  Server listener
