@@ -12,9 +12,9 @@ const PORT = process.env.PORT || 4000;
 app.use(express.json());  //body parser built into express
 
 //SECTION Routes
-app.get('/status', (req, res) =>{
+app.get('/', (req, res) =>{
     res.json({ status: 200, message: 'OK' });
-})
+});
 
 //SECTION  Server listener
 app.listen(PORT, () => {
