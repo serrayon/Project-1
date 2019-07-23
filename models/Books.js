@@ -9,6 +9,6 @@ const BooksSchema = new Schema({
   awards: {type: String}
 });
 
-const Books = mongoose.model('books', BooksSchema);
+const Books = mongoose.model('Books', BooksSchema);
 
 module.exports = Books;
