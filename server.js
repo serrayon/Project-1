@@ -31,8 +31,6 @@ app.get('/', (req, res) =>{
 
 // -------------------------------- API ENDPOINTS -------------------------------- //
 
-
-
   //Comment create
   app.post('/api/v1/comments', (req ,res) => {
     const newComment = req.body;
@@ -52,7 +50,7 @@ app.get('/', (req, res) =>{
 
   // Comment Destroy
 app.delete('/api/v1/comments/:comment_id', (req, res) => {
-    db.Comment.findByIdAndDelete(req.params.book_id, (err, deletedComment) => {
+    db.Comment.findByIdAndDelete(req.params.comment_id, (err, deletedComment) => {
       if (err) return res.status(400).json({
         status: 400,
         message: 'Something went wrong, please try again',
@@ -66,8 +64,9 @@ app.delete('/api/v1/comments/:comment_id', (req, res) => {
     });
   });
 
-  app.use('/api/v1/books', routes.books)
-
+  app.use('/api/v1/books', routes.books);
+  app.use('/api/v1/users', routes.users);
+  //app.use('/api/v1/', routes.users);
 
 //SECTION  Server listener
 app.listen(PORT, () => {
