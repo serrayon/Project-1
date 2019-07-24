@@ -31,43 +31,11 @@ app.get('/', (req, res) =>{
 
 // -------------------------------- API ENDPOINTS -------------------------------- //
 
-
-
-  //Comment create
-  app.post('/api/v1/comments', (req ,res) => {
-    const newComment = req.body;
   
-    db.Comment.create(newComment, (err, createdComment) => {
-      if (err) return res.status(400).json({
-        status: 400,
-        message: 'Something went wrong, please try again'});
-  
-      res.status(201).json({
-        status: 201,
-        data: createdComment,
-        requestedAt: getTime(),
-      });
-    });
-  });
 
-  // Comment Destroy
-app.delete('/api/v1/comments/:comment_id', (req, res) => {
-    db.Comment.findByIdAndDelete(req.params.book_id, (err, deletedComment) => {
-      if (err) return res.status(400).json({
-        status: 400,
-        message: 'Something went wrong, please try again',
-      });
-  
-      console.log(deletedComment);
-      res.status(200).json({
-        status: 200,
-        message: 'Success',
-      });
-    });
-  });
-
-  app.use('/api/v1/books', routes.books)
-
+  app.use('/api/v1/books', routes.books);
+  app.use('/api/v1/users', routes.users);
+  app.use('/api/v1/comments', routes.comments);
 
 //SECTION  Server listener
 app.listen(PORT, () => {
