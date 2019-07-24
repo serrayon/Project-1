@@ -2,7 +2,7 @@
 
 const db = require('../models');
 
-const pokemonList = require('./book.json');
+const bookList = require('./book.json');
 
 // removes all pokemon and
 db.Book.remove({}, () => {
