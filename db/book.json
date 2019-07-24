@@ -110,13 +110,13 @@
         }
     },
     {
-        "title": "",
+        "title": "The Secret River",
         "year_published": 1678,
         "book_index": 12,
         "author": {
-            "name": "",
-            "location": "",
-            "img": " "
+            "name": "Kate Grenville",
+            "location": "Australia",
+            "img": "https://qt.azureedge.net/resources/authors-images-large/kate-grenville.jpg"
         }
     }
 ]
