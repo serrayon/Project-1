@@ -5,5 +5,5 @@ mongoose.connect('mongodb://localhost:27017/worldOfLiterature', { useNewUrlParse
 module.exports = {
 	User: require('./Users'),
 	Book: require('./Book'),
-	Comments: require('./Comments')
+	Comment: require('./Comment')
 };
