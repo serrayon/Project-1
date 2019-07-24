@@ -1,10 +1,10 @@
 const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
-const Comments = require('./Comments');
+const Comment = require('./Comment');
 
 const UserSchema = ({
 
-        // comments: [Comments.schema],
+        // comments: [Comment.schema],
         name: { type: String, required: true },
         // comment: String
 

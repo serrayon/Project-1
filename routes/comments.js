@@ -9,7 +9,7 @@ function getTime() {
   
 
 //Comment create
-router.post('/api/v1/comments', (req ,res) => {
+router.post('/', (req ,res) => {
     const newComment = req.body;
   
     db.Comment.create(newComment, (err, createdComment) => {
@@ -26,7 +26,7 @@ router.post('/api/v1/comments', (req ,res) => {
   });
 
   // Comment Destroy
-router.delete('/api/v1/comments/:comment_id', (req, res) => {
+router.delete('/:comment_id', (req, res) => {
     db.Comment.findByIdAndDelete(req.params.comment_id, (err, deletedComment) => {
       if (err) return res.status(400).json({
         status: 400,
