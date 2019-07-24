@@ -8,6 +8,116 @@
             "location": "Mexico City, Mexico",
             "img": "https://i.pinimg.com/originals/5d/45/47/5d4547af31575dd299ce149ef039d89e.jpg "
         }
-        
-}]
+    },
+    {
+        "title": "The Colossous and Other Poems",
+        "year_published": 1678, 
+        "book_index": 2,
+        "author": {
+            "name": "Sylvia Plath",
+            "location": "Boston, Massachusetts, United States",
+            "img": " "
+        }
+    },
+    {
+        "title": "Withering Heights",
+        "year_published": 1678,
+        "book_index": 3,
+        "author": {
+            "name": "Emily Brontë",
+            "location": "England",
+            "img": " "
+        }
+    },
+    {
+        "title": "The Man In The White SHarkskin Suite",
+        "year_published": 1678,
+        "book_index": 4,
+        "author": {
+            "name": "Lucette Lagnado",
+            "location": "Cairo, Egypt",
+            "img": " "
+        }
+    },
+    {
+        "title": "The House of the Spirits",
+        "year_published": 1678,
+        "book_index": 5,
+        "author": {
+            "name": "Isabel Allende",
+            "location": "Chile",
+            "img": " "
+        }
+    },
+    {
+        "title": "",
+        "year_published": 1678,
+        "book_index": 6,
+        "author": {
+            "name": "Tolstoy",
+            "location": "",
+            "img": " "
+        }
+    },
+    {
+        "title": "The Wind-Up Bird Chronicle",
+        "year_published": 1678,
+        "book_index": 7,
+        "author": {
+            "name": "Haruki Murikabe",
+            "location": "Kyoto, Japan",
+            "img": " "
+        }
+    },
+    {
+        "title": "Bestario",
+        "year_published": 1678,
+        "book_index": 8,
+        "author": {
+            "name": "Julio Cortázar",
+            "location": "Argentina",
+            "img": " "
+        }
+    },
+    {
+        "title": "The Art of War",
+        "year_published": 1678,
+        "book_index": 9,
+        "author": {
+            "name": "Sun Tzu",
+            "location": "",
+            "img": " "
+        }
+    },
+    {
+        "title": "",
+        "year_published": 1678,
+        "book_index": 10,
+        "author": {
+            "name": "Arundhati Roy",
+            "location": "",
+            "img": " "
+        }
+    },
+    {
+        "title": "Don Quijote",
+        "year_published": 1678,
+        "book_index": 11,
+        "author": {
+            "name": "Miguel de Cervantez",
+            "location": "Alcala de Henares, Spain",
+            "img": " "
+        }
+    },
+    {
+        "title": "",
+        "year_published": 1678,
+        "book_index": 12,
+        "author": {
+            "name": "",
+            "location": "",
+            "img": " "
+        }
+    }
+]
 
