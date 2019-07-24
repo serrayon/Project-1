@@ -3,15 +3,15 @@ const Schema = mongoose.Schema;
 
 const CommentSchema = new Schema({
   message: {type: String},
-  book: 
+  book:
     {
         type: Schema.Types.ObjectId,
-        ref: 'Books' 
+        ref: 'Books'
     },
-  user: 
+  user:
     {
         type: Schema.Types.ObjectId,
-        ref: 'Users' 
+        ref: 'Users'
     }
 });
 

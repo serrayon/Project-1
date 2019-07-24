@@ -6,7 +6,7 @@ const db = require('../models');
 function getTime() {
     return new Date().toLocaleString();
   };
-  
+
 
 // Books Index
 router.get('/', (req, res) => {
@@ -15,7 +15,7 @@ router.get('/', (req, res) => {
         status: 400,
         message: 'Something went wrong, please try again',
       });
-  
+
       res.status(200).json({
         status: 200,
         numberOfResults: allBooks.length,
@@ -24,7 +24,7 @@ router.get('/', (req, res) => {
       });
     });
   });
-  
+
   // Book Show
   router.get('/:book_id', (req, res) => {
     db.Book.findById(req.params.book_id, (err, foundBook) => {
@@ -32,7 +32,7 @@ router.get('/', (req, res) => {
         status: 400,
         message: 'Something went wrong, please try again',
       });
-  
+
       res.status(200).json({
         status: 200,
         data: foundBook,
@@ -40,16 +40,17 @@ router.get('/', (req, res) => {
       });
     });
   });
-  
+
   // Book Create
   router.post('/', (req ,res) => {
     const newBook = req.body;
-  
+
+
     db.Book.create(newBook, (err, createdBook) => {
       if (err) return res.status(400).json({
         status: 400,
         message: 'Something went wrong, please try again'});
-  
+
       res.status(201).json({
         status: 201,
         data: createdBook,
@@ -57,7 +58,7 @@ router.get('/', (req, res) => {
       });
     });
   });
-  
+
   // Book Update
   router.put('/:book_id', (req, res) => {
     console.log(req.body);
@@ -67,7 +68,7 @@ router.get('/', (req, res) => {
         status: 400,
         message: 'Something went wrong, please try again',
       });
-  
+
       res.status(202).json({
         status: 202,
         data: updatedBook,
@@ -75,7 +76,7 @@ router.get('/', (req, res) => {
       });
     });
   })
-  
+
   // Book Destroy
   router.delete('/:book_id', (req, res) => {
     db.Book.findByIdAndDelete(req.params.book_id, (err, deletedBook) => {
@@ -83,7 +84,7 @@ router.get('/', (req, res) => {
         status: 400,
         message: 'Something went wrong, please try again',
       });
-  
+
       console.log(deletedBook);
       res.status(200).json({
         status: 200,
@@ -91,5 +92,5 @@ router.get('/', (req, res) => {
       });
     });
   });
-  
+
   module.exports = router;

@@ -3,4 +3,6 @@ module.exports = {
     books: require('./books'),
     views: require('./views'),
     users: require('./users'),
+    login: require('./login'),
+    views: require('./views'),
   }

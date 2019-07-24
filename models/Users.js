@@ -5,7 +5,8 @@ const Comment = require('./Comment');
 const UserSchema = ({
 
         // comments: [Comment.schema],
-        name: { type: String, required: true },
+        username: { type: String, required: true },
+        password: { type: String, required: true },
         // comment: String
 
     });
