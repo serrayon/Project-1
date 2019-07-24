@@ -1,112 +1,112 @@
 [
     {
         "title": "Primer sueño",
-        "year_published": 1678,
+        "year_published": 1692,
         "book_index": 1,
         "author": {
             "name": "Sor Juana Inés de la Cruz",
             "location": "Mexico City, Mexico",
-            "img": "https://i.pinimg.com/originals/5d/45/47/5d4547af31575dd299ce149ef039d89e.jpg "
+            "img": "https://i.pinimg.com/originals/5d/45/47/5d4547af31575dd299ce149ef039d89e.jpg"
         }
     },
     {
         "title": "The Colossous and Other Poems",
-        "year_published": 1678, 
+        "year_published": 1960, 
         "book_index": 2,
         "author": {
             "name": "Sylvia Plath",
             "location": "Boston, Massachusetts, United States",
-            "img": " "
+            "img": "https://pixel.nymag.com/imgs/daily/vulture/2019/01/24/24-sylvia-plath.w1200.h1200.jpg"
         }
     },
     {
         "title": "Withering Heights",
-        "year_published": 1678,
+        "year_published": 1847,
         "book_index": 3,
         "author": {
             "name": "Emily Brontë",
             "location": "England",
-            "img": " "
+            "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Emily_Bront%C3%AB_by_Patrick_Branwell_Bront%C3%AB_restored.jpg/220px-Emily_Bront%C3%AB_by_Patrick_Branwell_Bront%C3%AB_restored.jpg"
         }
     },
     {
         "title": "The Man In The White SHarkskin Suite",
-        "year_published": 1678,
+        "year_published": 2007,
         "book_index": 4,
         "author": {
             "name": "Lucette Lagnado",
             "location": "Cairo, Egypt",
-            "img": " "
+            "img": "https://i.harperapps.com/authors/29557/x300.jpg"
         }
     },
     {
         "title": "The House of the Spirits",
-        "year_published": 1678,
+        "year_published": 1982,
         "book_index": 5,
         "author": {
             "name": "Isabel Allende",
             "location": "Chile",
-            "img": " "
+            "img": "https://i0.wp.com/www.brainpickings.org/wp-content/uploads/2013/02/isabelallende.jpg?w=500&ssl=1"
         }
     },
     {
-        "title": "",
-        "year_published": 1678,
+        "title": "War and Peace",
+        "year_published": 1869,
         "book_index": 6,
         "author": {
-            "name": "Tolstoy",
-            "location": "",
-            "img": " "
+            "name": "Leo Tolstoy",
+            "location": "Russian Empire",
+            "img": "https://www.biography.com/.image/ar_1:1%2Cc_fill%2Ccs_srgb%2Cg_face%2Cq_auto:good%2Cw_300/MTE5NTU2MzI0OTQxMDA2MzQ3/leo-tolstoyjpg.jpg"
         }
     },
     {
         "title": "The Wind-Up Bird Chronicle",
-        "year_published": 1678,
+        "year_published": 1994,
         "book_index": 7,
         "author": {
             "name": "Haruki Murikabe",
             "location": "Kyoto, Japan",
-            "img": " "
+            "img": "https://andersen-award.com/wp-content/uploads/2017/12/Haruki-Murakami-Home.jpg"
         }
     },
     {
         "title": "Bestario",
-        "year_published": 1678,
+        "year_published": 1951,
         "book_index": 8,
         "author": {
             "name": "Julio Cortázar",
             "location": "Argentina",
-            "img": " "
+            "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Cort%C3%A1zar.jpg/200px-Cort%C3%A1zar.jpg"
         }
     },
     {
         "title": "The Art of War",
-        "year_published": 1678,
+        "year_published": "5th century",
         "book_index": 9,
         "author": {
             "name": "Sun Tzu",
-            "location": "",
-            "img": " "
+            "location": "China",
+            "img": "https://c8.alamy.com/comp/HPXCDD/sun-tzu-sunzi-circa-544-496bc-chinese-general-and-philosopher-best-HPXCDD.jpg"
         }
     },
     {
-        "title": "",
-        "year_published": 1678,
+        "title": "The God of Small Things",
+        "year_published": 1997,
         "book_index": 10,
         "author": {
             "name": "Arundhati Roy",
-            "location": "",
-            "img": " "
+            "location": "India",
+            "img": "https://www.stylist.co.uk/images/app/uploads/2017/10/25102407/fb2038acdd29c81af6f2383da7fd11c1.jpg?w=1200&h=1&fit=max&auto=format%2Ccompress"
         }
     },
     {
         "title": "Don Quijote",
-        "year_published": 1678,
+        "year_published": 1605,
         "book_index": 11,
         "author": {
             "name": "Miguel de Cervantez",
             "location": "Alcala de Henares, Spain",
-            "img": " "
+            "img": "https://www.onthisday.com/images/people/miguel-de-cervantes-saavedra-medium.jpg"
         }
     },
     {
