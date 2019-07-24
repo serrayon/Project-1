@@ -27,3 +27,11 @@ const BASE_URL = '/api/v1/books';
 
 
 // -------------------------------- FUNCTIONS ------------------------------- //
+
+
+
+
+
+//--------------Event Listeners-----------------------//
+
+// $citiesSection.on('click', deleteComment);
