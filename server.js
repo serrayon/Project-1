@@ -4,7 +4,7 @@ const db = require('./models')
 const bodyParser = require('body-parser');
 //SECTION  Instanced Modules
 const app = express();
-const routes = require('./routes');
+const routes = require('./routes');``
 const session = require('express-session')
 
 //SECTION System configuration variables
@@ -61,9 +61,6 @@ app.get('/', (req, res) =>{
 
 
 // -------------------------------- API ENDPOINTS -------------------------------- //
-
-
-
 
 
 //SECTION  Server listener
