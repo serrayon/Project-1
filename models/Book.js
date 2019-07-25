@@ -4,12 +4,9 @@ const Schema = mongoose.Schema;
 const BookSchema = new Schema({
   title: { type: String },
   year_published: { type: Number },
-  book_index: { type: Number },
-  author: {
-        name: { type: String },
-        location: { type: String },
-        img: { type: String, }
-  }
+  author_name: { type: String },
+  author_photo: { type: String },
+  author_location: { type: String }
 });
 
 const Book = mongoose.model('Book', BookSchema);

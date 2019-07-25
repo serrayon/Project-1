@@ -14,8 +14,8 @@ router.get('/', (req, res) => {
 	}
 });
 
+// render main page after lgon
 router.get('/main', (req, res) => {
-	console.log(req.currentUser)
 	res.sendFile(path.join(__dirname,`../views/main.html`));
 });
 

@@ -8,7 +8,7 @@ function getTime() {
   };
 
 
-// Books Index
+// Books Index fetch
 router.get('/', (req, res) => {
     db.Book.find({}, (err, allBooks) => {
       if (err) return res.status(400).json({
