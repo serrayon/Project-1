@@ -25,7 +25,7 @@ app.use(session({
   secret: 'secret',
   resave: false,
   saveUninitialized: true,
-  cookie: {originalMaxAge: 300000}
+  cookie: {originalMaxAge: 300000000}
 }));
 // Session for current user
 app.use(function(req,res,next){

@@ -7,25 +7,53 @@
     <!-- Main Css -->
     <link rel="stylesheet" href="/styles/styles.css">
     <title>Document</title>
+
+
 </head>
 <body>
 
+ <!--  ALl books -->
+  <div class="books">
+  </div>
+
+
+<!--  Single book-->
+  <div class="show-book" style="display: none" >
+    <div class="book">
+    </div>
+
+    <div class="comments">
+    </div>
+
+    <div class="comment-wrapper">
+    </div>
+  </div>
+
+
+<!-- New book create  -->
+
+  <form action='/api/v1/books' method='post' class='new-book'>
+          <p>Title</p>
+          <input type="text" name="title" placeholder="Enter title"/>
+          <p>Year Published</p>
+          <input type="text" name="year_published" placeholder="Enter title"/>
+          <p>author_name</p>
+          <input type="text" name="author_name" placeholder="Enter author name"/>
+          <p>author_photo</p>
+          <input type="text" name="author_photo" placeholder="Enter author photo"/>
+          <p>author_location</p>
+          <input type="text" name="author_location" placeholder="Enter author location"/>
+          <button type="submit">Create</button>
+  </form>
+
+  <script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+  <!-- Main JS -->
+  <script src="/scripts/app.js"></script>
 </body>
-<!-- Jquery -->
-
-<form action='/comments' method='post'>
-        <p></p>
-        <input type="text" name="message" placeholder="Enter message"/>
-        <p>Password</p>
-        <input type="hidden" name="text" value=''  />
-        <button type="submit">Continue</button>
-</form>
 
 
-<script
-src="https://code.jquery.com/jquery-3.4.1.min.js"
-integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-crossorigin="anonymous"></script>
-<!-- Main JS -->
-<script src="/scripts/app.js"></script>
+
 </html>
