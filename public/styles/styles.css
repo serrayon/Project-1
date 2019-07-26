@@ -12,6 +12,7 @@ h1 {
 
 body {
     background-color:beige;
+    /* background-color:rgb(168, 233, 241); */
         /* position: fixed;
        
         overflow: hidden; 
@@ -36,11 +37,31 @@ body {
 .pass {
     font-family: 'Cutive Mono', monospace;
 }
-
+.book-image{
+    box-shadow: 5px 5px;
+}
+.author_photo {
+    box-shadow: 5px 5px 5px #888888;
+    width: 250px;
+    height: 300px;
+}
+.delete-button{
+    box-shadow: 2px 2px 2px #888888;
+    color: red;
+    background-color: beige;
+    font-family: 'EB Garamond', serif;
+}
+.year_published {
+    font-family: 'EB Garamond', serif; 
+}
+.author_name {
+    font-family: 'EB Garamond', serif;
+    font-size: 32px;
+}
 /* reference found on https://www.youtube.com/watch?v=9HXpirUu_H4&app=desktop */
 .earth {
     /* position: absolute; */
-    
+    margin-top: 10px;
     margin: 0;
     width: 100px;
     height: 100px;
