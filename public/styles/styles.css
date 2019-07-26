@@ -45,19 +45,36 @@ body {
     width: 250px;
     height: 300px;
 }
+.book-title {
+    font-family: 'PT Mono', monospace;
+}
 .delete-button{
     box-shadow: 2px 2px 2px #888888;
     color: red;
     background-color: beige;
-    font-family: 'EB Garamond', serif;
+    font-family: 'PT Mono', monospace;
 }
 .year_published {
-    font-family: 'EB Garamond', serif; 
+    font-family: 'PT Mono', monospace; 
 }
 .author_name {
     font-family: 'EB Garamond', serif;
     font-size: 32px;
 }
+.comment-button {
+    box-shadow: 2px 2px 2px #888888;
+    color: red;
+    background-color: beige;
+    font-family: 'PT Mono', monospace;
+}
+.author_location {
+    font-family: 'PT Mono', monospace;
+}
+
+
+
+
+
 /* reference found on https://www.youtube.com/watch?v=9HXpirUu_H4&app=desktop */
 .earth {
     /* position: absolute; */

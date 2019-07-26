@@ -39,14 +39,13 @@ function renderBooks(books) {
  const bookTemplate = (book) => {
     return `
         <div id='${book._id}'>
-            <h4>${book.title}</h4>
+            <h4 class='book-title'>${book.title}</h4>
             <p class='year_published'>${book.year_published}</p>
             <p class='author_name'>${book.author_name}</p>
             <img class='author_photo' src=${book.author_photo} />
             <p class='author_location'>${book.author_location}</p>
-            <button class='delete-button'>delete</button>
-          
-            <button class='show-button'>comment</button>
+            <button class='delete-button'>Delete</button>
+            <button class='comment-button'>Comment</button>
         </div>
     `;
  };
@@ -98,9 +97,6 @@ function renderBooks(books) {
     `;
  };
 
- 
-
-
  $(document).ready(() => {
   $('.books').on('click', '.delete-button', function() {
     const parent = $(this).parent()
@@ -116,7 +112,7 @@ function renderBooks(books) {
         $(`#${book_id}`).remove()
       },
       failure: function() {
- 
+      
       }
     })
   })
@@ -143,7 +139,6 @@ function renderBooks(books) {
       }
     })
  
- 
  // get comments for book
     $.ajax({
       url: `${COMMENTS_URL}`,
@@ -162,8 +157,7 @@ function renderBooks(books) {
   })
  
   // fetch all books
- 
-  $.ajax({
+   $.ajax({
     url: BASE_URL,
     method: 'GET',
     dataType: 'JSON',
@@ -174,7 +168,6 @@ function renderBooks(books) {
  
     }
   })
- 
  
  // New book create
   $('.new-book').on('submit', function(event) {
@@ -216,13 +209,11 @@ function renderBooks(books) {
  
     event.preventDefault()
  
-    //return false;
   })
    
   // Delete comment
   $('.comments').on('click', '.delete-button', function() {
     const parent = $(this).parent()
-
     let comment_id = parent.attr('id')
 
     // Delet single comment
@@ -234,7 +225,7 @@ function renderBooks(books) {
         $(`#${comment_id}`).remove()
       },
       failure: function() {
- 
+      
       }
     })
   });
@@ -247,11 +238,7 @@ function renderBooks(books) {
 
       $('.edit-comment').hide()
       $('.edit-comment', parent).show()
-
     //console.log(commentMessage);
-  
-    
-  
   });
   
   $('.comments').delegate('.edit-submit-comment', 'submit',  function(event) {
@@ -274,19 +261,12 @@ function renderBooks(books) {
         $(`#${comment_id}`).html(comment.html())
       },
       failure: function() {
-
       }
     })
-
     event.preventDefault()
 
     return false;
-
   });
-
-    
-
-
 })
 
 
