@@ -28,4 +28,5 @@ of wirtters from different parts of the world. A bio section for each author alo
 with a expanded list of other books, articles, awards that they recieved. 
 
 
-![wire frame](./assets/)
+
+![IMG_0872](https://user-images.githubusercontent.com/49975993/61973271-8d2df580-af98-11e9-8378-99aa3813d3d1.jpg)
