@@ -1,9 +1,13 @@
 const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
+const Comment = require('./Comment');
 
 const UserSchema = ({
-        name: { type: String, required: true },
-        comment: String
+
+        // comments: [Comment.schema],
+        username: { type: String, required: true },
+        password: { type: String, required: true },
+        // comment: String
 
     });
 

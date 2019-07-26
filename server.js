@@ -4,9 +4,12 @@ const db = require('./models')
 const bodyParser = require('body-parser');
 //SECTION  Instanced Modules
 const app = express();
+const routes = require('./routes');``
+const session = require('express-session')
 
 //SECTION System configuration variables
 const PORT = process.env.PORT || 4000;
+
 
 // -------------------------------- MIDDLEWARE -------------------------------- //
 //Body Parser
@@ -17,6 +20,35 @@ app.use(express.static(`${__dirname}/public`));
 
 //SECTION Middleware
 app.use(express.json());  //body parser built into express
+
+app.use(session({
+  secret: 'secret',
+  resave: false,
+  saveUninitialized: true,
+  cookie: {originalMaxAge: 300000000}
+}));
+// Session for current user
+app.use(function(req,res,next){
+   if(req.session.user_id){
+		 		db.User.find({_id: req.session.user_id}, (err, users) => {
+					const user = users[0];
+					if (user) {
+						req.currentUser = user;
+					}
+					next();
+				})
+   } else {
+      req.currentUser = null;
+      next();
+   }
+});
+
+app.use('/login', routes.login);
+app.use('/api/v1/books', routes.books);
+app.use('/api/v1/users', routes.users);
+app.use('/api/v1/comments', routes.comments);
+app.use('/', routes.views);
+
 
 app.get('/', (req, res) => {
 	res.sendFile(`${__dirname}/views/index.html`);
@@ -29,24 +61,6 @@ app.get('/', (req, res) =>{
 
 
 // -------------------------------- API ENDPOINTS -------------------------------- //
-
-// Author Index
-app.get('/api/v1/authors', (req, res) => {
-    db.Author.find({}, (err, allAuthors) => {
-      if (err) return res.status(400).json({
-        status: 400,
-        message: 'Something went wrong, please try again',
-      });
-  
-      res.status(200).json({
-        status: 200,
-        numberOfResults: allAuthors.length,
-        data: allAuthors,
-        requestedAt: getTime(),
-      });
-    });
-  });
-
 
 
 //SECTION  Server listener
