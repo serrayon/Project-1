@@ -2,122 +2,90 @@
     {
         "title": "Primer sueño",
         "year_published": 1692,
-        "book_index": 1,
-        "author": {
-            "name": "Sor Juana Inés de la Cruz",
-            "location": "Mexico City, Mexico",
-            "img": "https://i.pinimg.com/originals/5d/45/47/5d4547af31575dd299ce149ef039d89e.jpg"
-        }
+        "author_name": "Sor Juana Inés de la Cruz",
+        "author_photo": "https://i.pinimg.com/originals/5d/45/47/5d4547af31575dd299ce149ef039d89e.jpg",
+        "author_location": "Mexico City, Mexico"
     },
     {
         "title": "The Colossous and Other Poems",
         "year_published": 1960, 
-        "book_index": 2,
-        "author": {
-            "name": "Sylvia Plath",
-            "location": "Boston, Massachusetts, United States",
-            "img": "https://pixel.nymag.com/imgs/daily/vulture/2019/01/24/24-sylvia-plath.w1200.h1200.jpg"
-        }
+        "author_name": "Sylvia Plath",
+        "author_photo": "https://pixel.nymag.com/imgs/daily/vulture/2019/01/24/24-sylvia-plath.w1200.h1200.jpg",
+        "author_location": "Boston, Massachusetts, United States"
     },
     {
         "title": "Withering Heights",
         "year_published": 1847,
-        "book_index": 3,
-        "author": {
-            "name": "Emily Brontë",
-            "location": "England",
-            "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Emily_Bront%C3%AB_by_Patrick_Branwell_Bront%C3%AB_restored.jpg/220px-Emily_Bront%C3%AB_by_Patrick_Branwell_Bront%C3%AB_restored.jpg"
-        }
+        "author_name": "Emily Brontë",
+        "author_photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Emily_Bront%C3%AB_by_Patrick_Branwell_Bront%C3%AB_restored.jpg/220px-Emily_Bront%C3%AB_by_Patrick_Branwell_Bront%C3%AB_restored.jpg",
+        "author_location": "England" 
     },
     {
         "title": "The Man In The White SHarkskin Suite",
         "year_published": 2007,
-        "book_index": 4,
-        "author": {
-            "name": "Lucette Lagnado",
-            "location": "Cairo, Egypt",
-            "img": "https://i.harperapps.com/authors/29557/x300.jpg"
-        }
+        "author_name": "Lucette Lagnado",
+        "author_photo": "https://i.harperapps.com/authors/29557/x300.jpg",
+        "author_location": "Cairo, Egypt"
     },
     {
         "title": "The House of the Spirits",
         "year_published": 1982,
-        "book_index": 5,
-        "author": {
-            "name": "Isabel Allende",
-            "location": "Chile",
-            "img": "https://i0.wp.com/www.brainpickings.org/wp-content/uploads/2013/02/isabelallende.jpg?w=500&ssl=1"
-        }
+        "author_name": "Isabel Allende",
+        "author_photo": "https://i0.wp.com/www.brainpickings.org/wp-content/uploads/2013/02/isabelallende.jpg?w=500&ssl=1",
+        "author_location": "Chile"
     },
     {
         "title": "War and Peace",
         "year_published": 1869,
-        "book_index": 6,
-        "author": {
-            "name": "Leo Tolstoy",
-            "location": "Russian Empire",
-            "img": "https://www.biography.com/.image/ar_1:1%2Cc_fill%2Ccs_srgb%2Cg_face%2Cq_auto:good%2Cw_300/MTE5NTU2MzI0OTQxMDA2MzQ3/leo-tolstoyjpg.jpg"
-        }
+        "author_name": "Leo Tolstoy",
+        "author_photo": "https://www.biography.com/.image/ar_1:1%2Cc_fill%2Ccs_srgb%2Cg_face%2Cq_auto:good%2Cw_300/MTE5NTU2MzI0OTQxMDA2MzQ3/leo-tolstoyjpg.jpg",
+        "author_location": "Russian Empire"
     },
     {
         "title": "The Wind-Up Bird Chronicle",
         "year_published": 1994,
-        "book_index": 7,
-        "author": {
-            "name": "Haruki Murikabe",
-            "location": "Kyoto, Japan",
-            "img": "https://andersen-award.com/wp-content/uploads/2017/12/Haruki-Murakami-Home.jpg"
-        }
+        "author_name": "Haruki Murikabe",
+        "author_photo": "https://andersen-award.com/wp-content/uploads/2017/12/Haruki-Murakami-Home.jpg",
+         "author_location": "Kyoto, Japan"  
     },
     {
         "title": "Bestario",
         "year_published": 1951,
-        "book_index": 8,
-        "author": {
-            "name": "Julio Cortázar",
-            "location": "Argentina",
-            "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Cort%C3%A1zar.jpg/200px-Cort%C3%A1zar.jpg"
-        }
+        "author_name": "Julio Cortázar",
+        "author_photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Cort%C3%A1zar.jpg/200px-Cort%C3%A1zar.jpg",
+        "author_location": "Argentina"
     },
     {
         "title": "The Art of War",
         "year_published": "5th century",
-        "book_index": 9,
-        "author": {
-            "name": "Sun Tzu",
-            "location": "China",
-            "img": "https://c8.alamy.com/comp/HPXCDD/sun-tzu-sunzi-circa-544-496bc-chinese-general-and-philosopher-best-HPXCDD.jpg"
-        }
+        "author_name": "Sun Tzu",
+        "author_photo": "https://c8.alamy.com/comp/HPXCDD/sun-tzu-sunzi-circa-544-496bc-chinese-general-and-philosopher-best-HPXCDD.jpg",
+        "author_location": "China"
     },
     {
         "title": "The God of Small Things",
         "year_published": 1997,
-        "book_index": 10,
-        "author": {
-            "name": "Arundhati Roy",
-            "location": "India",
-            "img": "https://www.stylist.co.uk/images/app/uploads/2017/10/25102407/fb2038acdd29c81af6f2383da7fd11c1.jpg?w=1200&h=1&fit=max&auto=format%2Ccompress"
-        }
+        "author_name": "Arundhati Roy",
+        "author_photo": "https://www.stylist.co.uk/images/app/uploads/2017/10/25102407/fb2038acdd29c81af6f2383da7fd11c1.jpg?w=1200&h=1&fit=max&auto=format%2Ccompress",
+        "author_location": "India"
     },
     {
         "title": "Don Quijote",
         "year_published": 1605,
-        "book_index": 11,
-        "author": {
-            "name": "Miguel de Cervantez",
-            "location": "Alcala de Henares, Spain",
-            "img": "https://www.onthisday.com/images/people/miguel-de-cervantes-saavedra-medium.jpg"
-        }
+        "author_name": "Miguel de Cervantez",
+        "author_photo": "https://www.onthisday.com/images/people/miguel-de-cervantes-saavedra-medium.jpg",
+        "author_location": "Alcala de Henares, Spain"
     },
     {
         "title": "The Secret River",
         "year_published": 1678,
-        "book_index": 12,
-        "author": {
-            "name": "Kate Grenville",
-            "location": "Australia",
-            "img": "https://qt.azureedge.net/resources/authors-images-large/kate-grenville.jpg"
-        }
+        "author_name": "Kate Grenville",
+        "author_photo": "https://qt.azureedge.net/resources/authors-images-large/kate-grenville.jpg",
+        "author_location":"Australia"
     }
 ]
+
+        
+
+
 
