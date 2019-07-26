@@ -79,10 +79,21 @@ function renderBooks(books) {
  
  const commentTemplate = (comment) => {
     return `
-        <div id='${comment._id}'>
+        <div id='${comment._id}' class='single-comment-wrapper'>
             <h4>${comment.message}</h4>
-            <button class='delete-button'>&times;</button>
-            <button class='edit-button'>edit</button>
+            <button class='delete-button'>delete</button>
+            <button class='edit'>edit</button>
+            <div class='edit-comment' style='display: none'>
+              <h4>Edit ${comment.message}</h4>
+              <form  class='edit-submit-comment'>
+                  <div>
+                      <label for='commentMessage'>Message</label>
+                      <input type='text' id='editCommentMessage' name='message' value='${comment.message}'/>
+                  </div>
+                  <button type='button' class='cancel-edit'>Cancel</button>
+                  <button>Submit</button>
+              </form>
+            </div>
         </div>
     `;
  };
@@ -112,7 +123,6 @@ function renderBooks(books) {
  
   $('.books').on('click', '.show-button', function() {
     const parent = $(this).parent()
- 
     let book_id = parent.attr('id')
  
  
@@ -208,13 +218,14 @@ function renderBooks(books) {
  
     //return false;
   })
- 
+   
+  // Delete comment
   $('.comments').on('click', '.delete-button', function() {
     const parent = $(this).parent()
- 
+
     let comment_id = parent.attr('id')
- console.log(`i am a delete`);
-    // Delete single comment
+
+    // Delet single comment
     $.ajax({
       url: `${BASE_URL}/${comment_id}`,
       method: 'DELETE',
@@ -228,71 +239,81 @@ function renderBooks(books) {
     })
   });
 
-  $('.comments').on('click', '.edit-button', function() {
-    const parent = $(this).parent()
-   console.log(`i am a update `);
-    let comment_id = parent.attr('id')
- 
-    // edit single comment
+  // Edit comment
+  $('.comments').on('click', '.edit', function() {
+     const parent = $(this).parent()
 
-$.ajax(`${BASE_URL}/${comment_id}`,{
+    // let comment_id = parent.attr('id')
+
+      $('.edit-comment').hide()
+      $('.edit-comment', parent).show()
+
+    //console.log(commentMessage);
+  
+    
+  
+  });
+  
+  $('.comments').delegate('.edit-submit-comment', 'submit',  function(event) {
+      const form = $(this);
+
+      const parent = $(this).closest('.single-comment-wrapper')
+
+     let comment_id = parent.attr('id')
+
+     console.log(parent)
+
+      // Edit single comment
+    $.ajax({
+      url: `${COMMENTS_URL}/${comment_id}`,
       method: 'PUT',
-      headers: {
-        'Content-Type': 'application/json',
-        const handleClick = (event) => {
-          event.preventDefault();
-          if (event.target.classList.contains('edit-button')) {
-            editComment(event);
-          } else if (event.target.classList.contains('submit-edit')) {
-            updateComment(event);
+      dataType: 'JSON',
+      data: form.serialize(),
+      success: function(response) {
+        let comment = $(commentTemplate(response.data))
+        $(`#${comment_id}`).html(comment.html())
+      },
+      failure: function() {
 
+      }
+    })
 
+    event.preventDefault()
 
-
+    return false;
 
   });
-});
-    // const updateCity = (event) => {
-    //   const commentId = event.${BASE_URL}/${comment_id}
-    //     console.log(cityId);
-    //      const $cityId = $(event.target).parent().attr('id');
-    //      const $cityDescription = $('#editCityDescription').val();
-      //   const cityName = document.getElementById('editCityName').value;
-      //   const cityDescription = document.getElementById('editCityDescription').value;
-      //   const newCity = { name: cityName, description: cityDescription };
-      //   console.log(newCity);
-      //   $.ajax(`${BASE_URL}/${cityId}`, {
-      //     method: 'PUT',
-      //     headers: {
-      //       'Content-Type': 'application/json',
-      //       const handleClick = (event) => {
-      //          if (event.target.classList.contains('edit-button')) {
-      //     editCity(event);
-      //      } else if (event.target.classList.contains('submit-edit')) {
-      //     updateCity(event);
-      //   }
-       //}
+
+    
 
 
-    // $.ajax(`${BASE_URL}/${comment_id}`,{
-    //   method: 'PUT',
-    //   headers: {
-    //     'Content-Type': 'application/json',
-    //     const handleClick = (event) => {
-    //       event.preventDefault();
-    //       if (event.target.classList.contains('edit-button')) {
-    //         editComment(event);
-    //       } else if (event.target.classList.contains('submit-edit')) {
-    //         updateComment(event);
-    //       }
-    //     } 
- 
-    //   }
-    // })
-  
+})
 
 
-//  success: function(response) {
-//   $(`#${comment_id}`)
-// },
-// failure: function() {
+
+
+
+// -------------------------------- STATE VARIABLES ------------------------------- //
+
+
+
+
+
+
+
+// -------------------------------- DOM ELEMENTS ------------------------------- //
+
+
+
+
+
+
+// -------------------------------- FUNCTIONS ------------------------------- //
+
+
+
+
+
+//--------------Event Listeners-----------------------//
+
+// $citiesSection.on('click', deleteComment);
