@@ -43,9 +43,8 @@ const bookTemplate = (book) => {
             <p class='author_name'>${book.author_name}</p>
             <img class='author_photo' src=${book.author_photo} />
             <p class='author_location'>${book.author_location}</p>
-            <button class='delete-button'>&times;</button>
-            <button class='edit-button'>edit</button>
-            <button class='show-button'>show</button>
+            <button class='delete-button'>delete</button>
+            <button class='show-button'>comment</button>
         </div>
     `;
 };
@@ -78,15 +77,28 @@ const newCommentTemplateForm = (book_id) => {
 
 const commentTemplate = (comment) => {
     return `
-        <div id='${comment._id}'>
+        <div id='${comment._id}' class='single-comment-wrapper'>
             <h4>${comment.message}</h4>
+            <button class='delete-button'>delete</button>
+            <button class='edit'>edit</button>
+            <div class='edit-comment' style='display: none'>
+              <h4>Edit ${comment.message}</h4>
+              <form  class='edit-submit-comment'>
+                  <div>
+                      <label for='commentMessage'>Message</label>
+                      <input type='text' id='editCommentMessage' name='message' value='${comment.message}'/>
+                  </div>
+                  <button type='button' class='cancel-edit'>Cancel</button>
+                  <button>Submit</button>
+              </form>
+            </div>
         </div>
     `;
 };
 
 $(document).ready(() => {
   $('.books').on('click', '.delete-button', function() {
-    var parent = $(this).parent()
+    const parent = $(this).parent()
 
     let book_id = parent.attr('id')
 
@@ -105,7 +117,7 @@ $(document).ready(() => {
   })
 
   $('.books').on('click', '.show-button', function() {
-    var parent = $(this).parent()
+    const parent = $(this).parent()
 
     let book_id = parent.attr('id')
 
@@ -182,7 +194,7 @@ $(document).ready(() => {
 
   // New comment create for book
 
-  $(document).delegate('.new-comment', 'submit', function(event) {
+  $(document).on('submit', '.new-comment', function(event) {
     const form = $(this);
 
     $.ajax({
@@ -202,6 +214,75 @@ $(document).ready(() => {
 
     return false;
   })
+   
+  // Delete comment
+  $('.comments').on('click', '.delete-button', function() {
+    const parent = $(this).parent()
+
+    let comment_id = parent.attr('id')
+
+    // Delet single comment
+    $.ajax({
+      url: `${BASE_URL}/${comment_id}`,
+      method: 'DELETE',
+      dataType: 'JSON',
+      success: function(response) {
+        $(`#${comment_id}`).remove()
+      },
+      failure: function() {
+
+      }
+    })
+  });
+
+  // Edit comment
+  $('.comments').on('click', '.edit', function() {
+     const parent = $(this).parent()
+
+    // let comment_id = parent.attr('id')
+
+      $('.edit-comment').hide()
+      $('.edit-comment', parent).show()
+
+    //console.log(commentMessage);
+  
+    
+  
+  });
+  
+  $('.comments').delegate('.edit-submit-comment', 'submit',  function(event) {
+      const form = $(this);
+
+      const parent = $(this).closest('.single-comment-wrapper')
+
+     let comment_id = parent.attr('id')
+
+     console.log(parent)
+
+      // Edit single comment
+    $.ajax({
+      url: `${COMMENTS_URL}/${comment_id}`,
+      method: 'PUT',
+      dataType: 'JSON',
+      data: form.serialize(),
+      success: function(response) {
+        let comment = $(commentTemplate(response.data))
+        $(`#${comment_id}`).html(comment.html())
+      },
+      failure: function() {
+
+      }
+    })
+
+    event.preventDefault()
+
+    return false;
+
+  });
+
+    
+
+
 })
 
 

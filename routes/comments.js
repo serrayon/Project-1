@@ -69,4 +69,20 @@ router.delete('/:comment_id', (req, res) => {
     });
   });
 
+// Update comment
+router.put('/:comment_id', (req, res) => {
+ db.Comment.findByIdAndUpdate(req.params.comment_id, req.body, { new: true }, (err, updateComment) => {
+   if (err) return res.status(400).json({
+     status: 400,
+     message: 'Something went wrong, please try again',
+   });
+     res.status(200).json({
+       status: 200,
+       data: updateComment,
+       message: 'Success'
+     });
+ });
+});
+
+
   module.exports = router;
