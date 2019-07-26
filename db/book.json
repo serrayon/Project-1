@@ -1,85 +1,85 @@
 [
     {
+        "author_name": "Sor Juana Inés de la Cruz",
         "title": "Primer sueño",
         "year_published": 1692,
-        "author_name": "Sor Juana Inés de la Cruz",
         "author_photo": "https://i.pinimg.com/originals/5d/45/47/5d4547af31575dd299ce149ef039d89e.jpg",
         "author_location": "Mexico City, Mexico"
     },
     {
+        "author_name": "Sylvia Plath",
         "title": "The Colossous and Other Poems",
         "year_published": 1960, 
-        "author_name": "Sylvia Plath",
         "author_photo": "https://pixel.nymag.com/imgs/daily/vulture/2019/01/24/24-sylvia-plath.w1200.h1200.jpg",
         "author_location": "Boston, Massachusetts, United States"
     },
     {
+        "author_name": "Emily Brontë",
         "title": "Wuthering Heights",
         "year_published": 1847,
-        "author_name": "Emily Brontë",
         "author_photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Emily_Bront%C3%AB_by_Patrick_Branwell_Bront%C3%AB_restored.jpg/220px-Emily_Bront%C3%AB_by_Patrick_Branwell_Bront%C3%AB_restored.jpg",
         "author_location": "England" 
     },
     {
+        "author_name": "Lucette Lagnado",
         "title": "The Man In The White Sharkskin Suite",
         "year_published": 2007,
-        "author_name": "Lucette Lagnado",
         "author_photo": "https://i.harperapps.com/authors/29557/x300.jpg",
         "author_location": "Cairo, Egypt"
     },
     {
+        "author_name": "Isabel Allende",
         "title": "The House of the Spirits",
         "year_published": 1982,
-        "author_name": "Isabel Allende",
         "author_photo": "https://i0.wp.com/www.brainpickings.org/wp-content/uploads/2013/02/isabelallende.jpg?w=500&ssl=1",
         "author_location": "Chile"
     },
     {
+        "author_name": "Leo Tolstoy",
         "title": "War and Peace",
         "year_published": 1869,
-        "author_name": "Leo Tolstoy",
         "author_photo": "https://www.biography.com/.image/ar_1:1%2Cc_fill%2Ccs_srgb%2Cg_face%2Cq_auto:good%2Cw_300/MTE5NTU2MzI0OTQxMDA2MzQ3/leo-tolstoyjpg.jpg",
         "author_location": "Russian Empire"
     },
     {
+        "author_name": "Haruki Murikabe",
         "title": "The Wind-Up Bird Chronicle",
         "year_published": 1994,
-        "author_name": "Haruki Murikabe",
         "author_photo": "https://andersen-award.com/wp-content/uploads/2017/12/Haruki-Murakami-Home.jpg",
          "author_location": "Kyoto, Japan"  
     },
     {
+        "author_name": "Julio Cortázar",
         "title": "Bestario",
         "year_published": 1951,
-        "author_name": "Julio Cortázar",
         "author_photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Cort%C3%A1zar.jpg/200px-Cort%C3%A1zar.jpg",
         "author_location": "Argentina"
     },
     {
+        "author_name": "Sun Tzu",
         "title": "The Art of War",
         "year_published": "5th century",
-        "author_name": "Sun Tzu",
         "author_photo": "https://c8.alamy.com/comp/HPXCDD/sun-tzu-sunzi-circa-544-496bc-chinese-general-and-philosopher-best-HPXCDD.jpg",
         "author_location": "China"
     },
     {
+        "author_name": "Arundhati Roy",
         "title": "The God of Small Things",
         "year_published": 1997,
-        "author_name": "Arundhati Roy",
         "author_photo": "https://www.stylist.co.uk/images/app/uploads/2017/10/25102407/fb2038acdd29c81af6f2383da7fd11c1.jpg?w=1200&h=1&fit=max&auto=format%2Ccompress",
         "author_location": "India"
     },
     {
+        "author_name": "Miguel de Cervantez",
         "title": "Don Quijote",
         "year_published": 1605,
-        "author_name": "Miguel de Cervantez",
         "author_photo": "https://www.onthisday.com/images/people/miguel-de-cervantes-saavedra-medium.jpg",
         "author_location": "Alcala de Henares, Spain"
     },
     {
+        "author_name": "Kate Grenville",
         "title": "The Secret River",
         "year_published": 1678,
-        "author_name": "Kate Grenville",
         "author_photo": "https://qt.azureedge.net/resources/authors-images-large/kate-grenville.jpg",
         "author_location":"Australia"
     }

@@ -39,13 +39,15 @@ function renderBooks(books) {
  const bookTemplate = (book) => {
     return `
         <div id='${book._id}'>
-            <h4 class='book-title'>${book.title}</h4>
+        <h4 class='author_name'>${book.author_name}</h4>
+            <p class='book-title'>${book.title}</p>
             <p class='year_published'>${book.year_published}</p>
-            <p class='author_name'>${book.author_name}</p>
-            <img class='author_photo' src=${book.author_photo} />
             <p class='author_location'>${book.author_location}</p>
+            <img class='author_photo' src=${book.author_photo} />
+            <div>
             <button class='delete-button'>Delete</button>
             <button class='comment-button'>Comment</button>
+            </div>
         </div>
     `;
  };
@@ -53,11 +55,12 @@ function renderBooks(books) {
  const showBookTemplate = (book) => {
     return `
         <div id='${book._id}'>
-            <h4>${book.title}</h4>
+        <h4 class='author_name'>${book.author_name}</h4>    
+        <p>${book.title}<p>
             <p class='year_published'>${book.year_published}</p>
-            <p class='author_name'>${book.author_name}</p>
-            <img class='author_photo' src=${book.author_photo} />
             <p class='author_location'>${book.author_location}</p>
+            <img class='author_photo' src=${book.author_photo} />
+            
  
         </div>
     `;
