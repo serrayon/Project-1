@@ -32,3 +32,5 @@ with a expanded list of other books, articles, awards that they recieved.
 ![IMG_0872](https://user-images.githubusercontent.com/49975993/61973271-8d2df580-af98-11e9-8378-99aa3813d3d1.jpg)
 
 ![IMG_0873](https://user-images.githubusercontent.com/49975993/61973411-d0886400-af98-11e9-881b-1b7799d72cc3.jpg)
+
+![IMG_0874](https://user-images.githubusercontent.com/49975993/61973476-f281e680-af98-11e9-874c-6574c87dc714.jpg)
